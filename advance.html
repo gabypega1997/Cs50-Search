@@ -30,6 +30,7 @@
             }
             .input-fields{
                 width:100%;
+                
             }
             
             input{
@@ -69,6 +70,11 @@
             .submit-button input:hover{
                 background-color: #aecbfa;
             }
+
+            .input-fields input:focus-visible{
+                outline-color: #8ab4f8;
+                outline-width: 0.1px;
+            }
         </style>
     </head>
     <body>
@@ -77,21 +83,22 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="googlelogo" width='72px' height="28px">
             </div >
             <div class="container-links">
-                <a href="/image.html" class="imageLink">Images</a>
+                
                 <a href="/index.html" class="advancedLink">Search</a>
+                <a href="/image.html" class="imageLink">Images</a>
                 <img src="https://www.kindpng.com/picc/m/70-702497_keypad-dial-number-layout-9-dots-icon-png.png" height="18px" width="18px" class="dotsLogo">
             </div>            
         </div>
 
         <div class="container-search">  
-                <form action="#" method="get">
+                <form action="https://google.com/search" method="get">
 
                     <div class="search-row">
                         <div class="label">
                             <label for="all-words">all these words:</label>
                         </div>
                         <div class="input-fields">
-                            <input type="text" id="all-words">
+                            <input type="text" id="all-words" name="as_q">
                         </div>
                     </div>
 
@@ -100,7 +107,7 @@
                             <label for="exact-word">this exact word or phrase:</label>
                         </div>
                         <div class="input-fields">
-                            <input type="text" name="" id="exact-word">
+                            <input type="text" name="as_epq" id="exact-word" >
                         </div>
                     </div>
 
@@ -109,7 +116,7 @@
                             <label for="any-words">any of these words:</label>
                         </div>
                         <div class="input-fields">
-                            <input type="text" name="" id="any-words">
+                            <input type="text" name="as_oq" id="any-words">
                         </div>
                     </div>
 
@@ -118,12 +125,12 @@
                             <label for="none-words">none of these words:</label>
                         </div>
                         <div class="input-fields">
-                            <input type="text" name="" id="none-words">
+                            <input type="text" name="as_eq" id="none-words">
                         </div>
                     </div>
 
                     <div class="submit-button">
-                        <input type="button"  value="Advanced Search" >
+                        <input type="submit"  value="Advanced Search" >
                     </div>
                 </form>
         </div>
