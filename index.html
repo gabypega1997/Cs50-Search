@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <style>
+            .container-main{
+                margin: 0;
+                position: absolute;
+                top: 38%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .container-title{
+                width: 100vw;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .container-form{
+                text-align: center;
+                width: 560px;
+                margin:auto;
+            }
+            .container-navbar{
+                width: 100vw;
+                height: 50px;
+                display: flex;
+                justify-content:end ;
+                padding: 10px;
+
+            }
+            .textField{
+                width: 470px;
+                height: 34px;
+                border-radius: 50px;
+                border: .4px solid rgb(204, 204, 204);
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .textField:focus{
+                outline: none;
+                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.185);
+                transform: scale(1.01);
+            }
+            input[type=submit]{
+                color:rgb(70, 69, 69);
+                font-size: .85rem;
+                padding: 8px 12px 8px 12px;
+                margin-top: 20px;
+                border:none;
+                background-color: rgb(245, 245, 245);
+                border-radius: 2.5px;
+            }
+            input[type=submit]:hover{
+                color:rgb(41, 40, 40);
+                box-shadow: 0 0 0 0.3px rgb(156, 156, 156);
+            }
+            .shadow:hover{
+                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.185);
+                transform: scale(1.01);
+            }
+            input[type=submit]:hover{
+                cursor: pointer;
+            }
+            .submitButton{
+                margin-right: 8px;
+            }
+            .searchLogo{
+                z-index: 5;
+                position: absolute;
+                margin-left: -260px;
+                margin-top: 12px;
+            } 
+            .microphone{
+                position: absolute;
+                z-index: 4;
+                margin-left: 247px;
+                margin-top: 9px;
+            }
+            a{
+                text-decoration: none;
+                color:rgb(26, 25, 25);
+                font-size: medium;
+                font-family: Arial ,sans-serif;
+                font-size: 14spx;
+                margin-right: 20px;
+            }
+            .dotsLogo{
+                margin-right: 20px;
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-navbar">
+            
+            <a href="/image.html" class="imageLink">Images</a>
+            <a href="/advance.html" class="advancedLink">Advanced</a>
+            <img src="https://www.kindpng.com/picc/m/70-702497_keypad-dial-number-layout-9-dots-icon-png.png" height="18px" width="18px" class="dotsLogo">
+        </div>
+        <div class="container-main">  
+            <div class="container-title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="googlelogo" width='272px' height="92px">
+            </div >
+            <div class="container-form">
+                <img  src="https://www.iconbunny.com/icons/media/catalog/product/1/8/1871.5-magnifier-icon-iconbunny.jpg" alt="Search Icon" height="15px" width="15px"  class="searchLogo">
+                <img  src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052018/untitled-1_63.png?VaW1bs_mipmverkoNocEJNL6BKTHYW.R&itok=ThO1Yh_H" alt="Search Icon" height="19px" width="17px"  class="microphone">
+                <form action="https://google.com/search">
+                    <input class="textField shadow" type="text" name="q">
+                    <input class="submitButton " type="submit" value="Google Search" name="btnK">
+                    <input class="fellingLuckyButton button" type="submit" name="btnI" value="I am Feeling Lucky">
+                </form>    
+
+            </div> 
+        </div>
+    </body>
+</html>

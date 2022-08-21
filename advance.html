@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <style>
+            .container-main{
+                margin: 0;
+                position: absolute;
+                top: 38%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .container-navbar{
+                display:flex;
+                justify-content: space-between;
+                padding:10px;
+            }
+            .search-row{
+                display:flex;
+            }
+            .container-search{
+                width: 80vw;
+            }
+            .label{
+                width: 20vw;
+                padding-top: 20px;
+                font-size: 1.2rem;
+            }
+            .input-fields{
+                width:100%;
+            }
+            
+            input{
+                max-width: 70vw;
+                width: 100%;
+
+                font-size: 24px;
+                margin:10px;
+            }
+            
+            a{
+                text-decoration: none;
+                color:rgb(26, 25, 25);
+                font-size: medium;
+                font-family: Arial ,sans-serif;
+                font-size: 14spx;
+                margin-right: 20px;
+            }
+            .dotsLogo{
+                margin-right: 20px;
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-navbar">
+            <div class="container-title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="googlelogo" width='72px' height="28px">
+            </div >
+            <div class="container-links">
+                <a href="/image.html" class="imageLink">Images</a>
+                <a href="/index.html" class="advancedLink">Search</a>
+                <img src="https://www.kindpng.com/picc/m/70-702497_keypad-dial-number-layout-9-dots-icon-png.png" height="18px" width="18px" class="dotsLogo">
+            </div>            
+        </div>
+
+        <div class="container-search">  
+                <form action="#" method="get">
+
+                    <div class="search-row">
+                        <div class="label">
+                            <label for="all-words">all these words:</label>
+                        </div>
+                        <div class="input-fields">
+                            <input type="text" id="all-words">
+                        </div>
+                    </div>
+
+                    <div class="search-row">
+                        <div class="label">
+                            <label for="exact-word">this exact word or phrase:</label>
+                        </div>
+                        <div class="input-fields">
+                            <input type="text" name="" id="exact-word">
+                        </div>
+                    </div>
+
+                    <div class="search-row">
+                        <div class="label">
+                            <label for="any-words">any of these words:</label>
+                        </div>
+                        <div class="input-fields">
+                            <input type="text" name="" id="any-words">
+                        </div>
+                    </div>
+
+                    <div class="search-row">
+                        <div class="label">
+                            <label for="none-words">none of these words:</label>
+                        </div>
+                        <div class="input-fields">
+                            <input type="text" name="" id="none-words">
+                        </div>
+                    </div>
+
+                    <div class="submit-button">
+                        <input type="button"  value="Advanced Search" class="search-button">
+                    </div>
+                </form>
+        </div>
+    </body>
+</html>
